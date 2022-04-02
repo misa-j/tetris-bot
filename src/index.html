@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tetris</title>
+    <style>
+      div {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 700px;
+        margin: auto;
+        text-align: center;
+      }
+      .container div {
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        display: inline-block;
+        margin: 1px;
+      }
+      .combinations div {
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        display: inline-block;
+        margin: 1px;
+      }
+      .one {
+        background-color: #01f0f1;
+      }
+      .two {
+        background-color: #0101f0;
+      }
+      .three {
+        background-color: #efa000;
+      }
+      .four {
+        background-color: #f0f001;
+      }
+      .five {
+        background-color: #00f000;
+      }
+      .six {
+        background-color: #a000f1;
+      }
+      .seven {
+        background-color: #f00100;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="spawn">spawn</button>
+    <button id="play">play</button>
+    <div class="container"></div>
+
+    <script src="./countHoles.js"></script>
+    <script src="./shapes.js"></script>
+    <script src="./board.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
